@@ -21,14 +21,11 @@ class Home extends StatelessWidget {
         title: const Text("Frases do dia"),
         backgroundColor: Colors.blue,
       ),
-      body: Center(
-        child: TextButton(
-          onPressed: () {
-            print("Botão clicado");
-          },
-          child: const Text("Botão"),
-        ),
+     body: Center( 
+      child: Image.asset(
+        "images/estudo.jpg"
       ),
+),
     );
   }
 }
