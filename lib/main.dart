@@ -3,29 +3,34 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(
     MaterialApp(
-      home: Home(),
-    ),
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+       
+        appBar: AppBar(
+          backgroundColor: Colors.blueAccent,
+          title: Text("Frases do dia"),
+          centerTitle: true,
+        ),
+        body:Padding(
+          padding: EdgeInsets.all(16),
+          child: Text("Conteúdo Principal"),
+        ) ,
+        bottomNavigationBar: BottomAppBar(
+          color: Colors.blueAccent,
+          child: Padding(
+            padding: EdgeInsets.all(16),
+            child: Row(
+              children: [
+                Text("Texto 1"),
+                Text("Texto 2")
+              ],
+            ),
+          ),
+        ),
+
+      ),
+      
+
+    )
   );
-}
-
-class Home extends StatelessWidget {
-  const Home({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white,
-      appBar: AppBar(
-        title: const Text("Frases do dia"),
-        backgroundColor: Colors.blue,
-      ),
-     body: Center( 
-      child: Image.asset(
-        "images/estudo.jpg"
-      ),
-),
-    );
-  }
 }
