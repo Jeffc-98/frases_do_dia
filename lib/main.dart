@@ -78,13 +78,13 @@ class _HomeState extends State<Home> {
                     fontSize: 18,
                     fontStyle: FontStyle.italic,
                     color: Colors.white,
-                  )
-                ),
-              ),
+              )
+            ),
+           ),
          ],
         ),
       ),
-      )
-    );;
+     )
+    );
   }
 }
